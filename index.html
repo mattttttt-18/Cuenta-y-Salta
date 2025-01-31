@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Viaje Espacial Matemático</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="pantalla-inicial" class="pantalla">
+        <h1>🌟 ¡Bienvenido a la Misión Espacial! 🌟</h1>
+        <p>Eres un astronauta que debe viajar desde Plutón hasta el Sol. Para avanzar, debes ingresar los 10 primeros múltiplos de un número. ¡Buena suerte!</p>
+        <button id="comenzar-btn" class="btn">Comenzar Misión</button>
+    </div>
+    <div id="pantalla-juego" class="pantalla oculto">
+        <div id="historia" class="historia"></div>
+        <div id="planeta-container" class="planeta-container">
+            <img id="planeta" src="images/pluton.png" alt="Planeta">
+            <img id="nave" src="images/nave.png" alt="Nave Espacial">
+        </div>
+        <div id="mensaje" class="mensaje"></div>
+        <input type="text" id="respuesta" class="input-respuesta" placeholder="Ingresa el múltiplo...">
+        <button id="enviar-respuesta-btn" class="btn">Enviar</button>
+        <div id="resultado" class="resultado"></div>
+    </div>
+    <div id="pantalla-final" class="pantalla oculto">
+        <h1>🚀 ¡Felicidades, has completado la misión! 🚀</h1>
+        <p>Has llegado al Sol y demostrado tus habilidades matemáticas.</p>
+        <button id="reiniciar-btn" class="btn">Reiniciar Misión</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

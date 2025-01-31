@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.pantalla {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.pantalla.activa {
+    display: flex;
+}
+
+.btn {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #63b8ff;
+}
+
+.planeta-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#planeta {
+    width: 80%; /* Ajusta el tamaño estándar de los planetas */
+    height: auto;
+    border-radius: 50%;
+}
+
+#nave {
+    position: absolute;
+    width: 60px;
+    bottom: 10%; /* Baja la nave aún más */
+    transform: translateX(-50%);
+    transition: bottom 0.5s;
+}
+
+.historia {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.mensaje, .resultado {
+    font-size: 1.2em;
+    margin: 5px 0;
+    /* Subir un poco el texto */
+    margin-top: 10px;
+}
+
+.input-respuesta {
+    padding: 10px;
+    font-size: 1.2em;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+.resultado {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.resultado.correcto {
+    color: #00ff00;
+}
+
+.resultado.incorrecto {
+    color: #ff4500;
+}
